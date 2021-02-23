@@ -5,3 +5,44 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Project.destroy_all
+
+User.destroy_all
+
+user = User.create(
+  email: "luzie@luzie.com",
+  password: "testing",
+  )
+
+1.times do |counter|
+
+  project = Project.new(
+    title: "the man-machine",
+    description: "In the sense of Giambattista Vicos Homo Faber we are only able to fully comprehend what we would be able to construct ourselves. But the structures of nowadays society are no longer to be decoded without the use of computers and are not based on handed-down knowledge alone, but the collection and evaluation of data.
+            What if this present time, in which technical complexity has overcome peoples comprehension of the world they live in, could be encountered by means of design?",
+    category: "design",
+    year: "2019"
+    )
+  project.user = user
+
+  file = URI.open('https://germandesigngraduates.com/wp-content/uploads/2020/06/maschine_01-scaled.jpg')
+  project.photos.attach(io: file, filename: "nes_#{counter}.jpg", content_type: 'image/jpg')
+
+  project.save!
+end
+
+1.times do |counter|
+
+  project = Project.new(
+    title: "Handwerker",
+    description: "Inspired by the craftsmanship of thuringian glass blowers, Handwerker was created as a new interpretation of the traditional forest glass with its distinct green colour which is linked to the iron contents of the thuringian forests soil. Glass objects made in these glassworks today are often produced with so much perfection that the outcome of the artistic craft of glassblowing can often not be differenciated from indutrialized mass produced glass by pure perception.",
+    category: "design",
+    year: "2017"
+    )
+  project.user = user
+
+  file = URI.open('https://manifestofpractice.com/wp-content/uploads/2019/01/Bildschirmfoto-2019-01-09-um-16.37.36-768x582.png')
+  project.photos.attach(io: file, filename: "nes_#{counter}.png", content_type: 'image/png')
+
+  project.save!
+end
