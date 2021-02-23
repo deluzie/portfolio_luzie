@@ -1,0 +1,26 @@
+.galaxy-container {
+  background-image: url(galaxyx.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 100vw;
+}
+
+.project-card {
+  width: 20px;
+
+  a {
+    text-decoration: none;
+    color: $golden;
+  }
+}
+
+.index-content {
+  width: 80%;
+  margin: auto;
+}
+
+.page-container {
+  padding-top: 5%;
+  width: 90%;
+  margin: auto;
+}
