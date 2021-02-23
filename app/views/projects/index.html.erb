@@ -1,16 +1,10 @@
-<div class="container">
-  <div class="row">
+<div class="page-container">
+  <div class="galaxy-container">
+    <div class="index-content">
     <% @projects.each do |project| %>
-    <div class="col-lg-6 col-md-4">
-      <div class="card mb-4 index-border">
-        <div class="card-images">
-          <%= cl_image_tag project.photos[0].key, height: 300, width: 490, crop: :fill %>
-          <h2> <strong> <%= project.title %> </strong></h2>
-          <div class='card-body'>
-            <p> <%= link_to project.description.truncate(110), project_path(project), class: "stretched-link" %> </p>
-            <h2> <strong> <%= project.year %>€</strong> </h2>
-          </div>
-        </div>
+      <div class="row project-card">
+        <%= cl_image_tag project.photos[0].key, height: 100, crop: :fill %>
+        <h3><%= link_to project.title, project_path(project) %></h3>
       </div>
     <% end %>
     </div>
