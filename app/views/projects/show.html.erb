@@ -1,1 +1,38 @@
 
+
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon golden">
+  <%= link_to "/" do %>
+    <%= image_tag("logo_white.png", width:'200', class: "padding-top") %>
+  <% end %>
+  <%= render 'shared/navbar' %>
+</div>
+<div class="background-golden">
+  <div class="row show-content">
+    <% @project.photos.each do |photo| %>
+      <div class='overlay'>
+        <div class='popup'>
+          <div class='closing'>
+            <p class="text-center">x</p>
+          </div><!-- close button-->
+          <%= cl_image_tag photo.key %>
+      <!-- popup content goes here -->
+        </div>
+      </div>
+    <div class="col-12 col-md-4 col-lg-7">
+      <h3 class="align-right">
+        <%= @project.title %><br>
+        <%= @project.year %>
+      </h3>
+        <div class="project-photo">
+          <div>
+            <button class="button-photo text-center">+</button>
+          </div>
+          <%= cl_image_tag photo.key %>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-12 col-md-7 col-lg-4">
+      <p><%= @project.description %></p>
+    </div>
+  </div>
+</div>

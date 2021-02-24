@@ -1,0 +1,79 @@
+*{
+    margin:0;
+}
+html, body {
+    height:100%;
+}
+
+.overlay {
+    overflow: hidden;
+    position: absolute;
+    display:none;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background: rgba(165, 135, 105, 0.834);
+    z-index: 1000;
+}
+
+.closing {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  text-shadow: none;
+  width: 35px;
+  height: 25px;
+  opacity: 0.9;
+  p {
+    margin: auto;
+    font-size: 16px;
+  }
+  &:hover {
+  color: red;
+  border: 1px solid red;
+  text-decoration: none;
+  transition: 0.9s;
+  opacity: 1;
+  }
+}
+
+
+.popup {
+  z-index: 2000;
+  position: relative;
+  margin: auto;
+  width: 70%;
+  margin-top: 110px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.button-photo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: $golden;
+  border: 1px solid $golden;
+  border-radius: 50%;
+  cursor: pointer;
+  text-shadow: none;
+  width: 35px;
+  height: 25px;
+  opacity: 0.8;
+  &:hover {
+  color: red;
+  border: 1px solid red;
+  text-decoration: none;
+  transition: 0.9s;
+  opacity: 0.9;
+  }
+}
+
+
