@@ -36,22 +36,11 @@
 
 .show-content {
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 150px;
+  justify-content: space-between;
   padding-bottom: 150px;
   width: 80%;
   margin: auto;
   color: white;
-}
-
-.project-photo {
-  width: 100%;
-  position: relative;
-  margin: auto;
-  img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 .align-right {

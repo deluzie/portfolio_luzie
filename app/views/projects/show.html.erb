@@ -7,32 +7,41 @@
   <%= render 'shared/navbar' %>
 </div>
 <div class="background-golden">
+
+  <div class="row main-picture">
+    <div class="col-12">
+      <%= cl_image_tag @project.main_picture.key %>
+    </div>
+  </div>
+
   <div class="row show-content">
-    <% @project.photos.each do |photo| %>
-      <div class='overlay'>
-        <div class='popup'>
-          <div class='closing'>
-            <button class="button-photo closing-x">x</button>
-          </div><!-- close button-->
-          <%= cl_image_tag photo.key %>
-      <!-- popup content goes here -->
-        </div>
-      </div>
-    <div class="col-12 col-md-4 col-lg-7">
-      <h3 class="align-right">
+
+    <div class="col-lg-6 col-sm-12">
+      <h3>
         <%= @project.title %><br>
         <%= @project.year %>
       </h3>
-        <div class="project-photo">
-          <div>
-            <button class="button-photo">+</button>
-          </div>
-          <%= cl_image_tag photo.key %>
-        </div>
-      <% end %>
-    </div>
-    <div class="col-12 col-md-7 col-lg-4">
       <p><%= @project.description %></p>
     </div>
+
+    <div class="row photos-container">
+      <% @project.photos.each do |photo| %>
+      <div class="col-lg-6 col-sm-12">
+        <div class="project-photo">
+          <%= cl_image_tag photo.key %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+    <!-- <div class="col-12 col-md-3 col-lg-4">
+      <% @project.photos.each do |photo| %>
+      <div class="project-photo">
+        <div>
+          <button class="button-photo">+</button>
+        </div>
+        <%= cl_image_tag photo.key %>
+      </div>
+      <% end %>
+    </div> -->
   </div>
 </div>
