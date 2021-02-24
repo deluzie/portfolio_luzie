@@ -12,7 +12,7 @@
       <div class='overlay'>
         <div class='popup'>
           <div class='closing'>
-            <p class="text-center">x</p>
+            <button class="button-photo closing-x">x</button>
           </div><!-- close button-->
           <%= cl_image_tag photo.key %>
       <!-- popup content goes here -->
@@ -25,7 +25,7 @@
       </h3>
         <div class="project-photo">
           <div>
-            <button class="button-photo text-center">+</button>
+            <button class="button-photo">+</button>
           </div>
           <%= cl_image_tag photo.key %>
         </div>

@@ -17,34 +17,7 @@ html, body {
     z-index: 1000;
 }
 
-.closing {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  color: white;
-  border: 1px solid white;
-  border-radius: 50%;
-  cursor: pointer;
-  text-shadow: none;
-  width: 35px;
-  height: 25px;
-  opacity: 0.9;
-  p {
-    margin: auto;
-    font-size: 16px;
-  }
-  &:hover {
-  color: red;
-  border: 1px solid red;
-  text-decoration: none;
-  transition: 0.9s;
-  opacity: 1;
-  }
-}
-
-
 .popup {
-  z-index: 2000;
   position: relative;
   margin: auto;
   width: 70%;
@@ -68,12 +41,13 @@ html, body {
   height: 25px;
   opacity: 0.8;
   &:hover {
-  color: red;
-  border: 1px solid red;
   text-decoration: none;
   transition: 0.9s;
   opacity: 0.9;
   }
 }
 
+.closing-x {
+  line-height: 10px;
+}
 
