@@ -18,12 +18,12 @@ require('jquery')
 import "bootstrap";
 
 document.addEventListener('turbolinks:load', () => {
+
   $(document).ready(function(){
-    $(".button-photo").click(function(){
-    $('.overlay').show();
-    });
-    $(".closing").click(function(){
-    $('.overlay').hide();
+    $(".button").click(function(){
+    $('.popup').toggle();
     });
   });
+
 });
+

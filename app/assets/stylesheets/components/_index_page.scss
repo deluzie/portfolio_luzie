@@ -1,0 +1,70 @@
+.index-container {
+  min-height: 100vh;
+  padding-top: 5%;
+}
+
+.index-element {
+  color: $golden;
+  width: 100vw;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $golden;
+  img {
+    opacity: 0;
+  }
+}
+
+.content:hover {
+    background-color: rgba(165, 135, 105, 0.714);
+    color: white;
+    border-bottom: 1px solid white;
+    transition: 0.8s;
+
+    img {
+      padding-top: 0px;
+      position: relative;
+      top: 0;
+      opacity: 1;
+      width: 100%;
+      z-index: 2000;
+    }
+
+    .pictures p {
+      display: none;
+    }
+}
+
+.index-element:hover {
+  a {
+    text-decoration: none;
+    color: white;
+    transition: 0.8s;
+  }
+}
+
+.index-column.text {
+  padding: 13px;
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: flex-end;
+  p {
+    margin-bottom: 0px;
+    letter-spacing: 0.05em;
+  }
+}
+
+.pictures {
+  height: 0px;
+  padding-right: 0px;
+
+  p {
+    padding-top: 16px;
+  }
+}
+
