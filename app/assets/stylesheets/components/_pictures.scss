@@ -1,14 +1,16 @@
 .main-picture {
-  width: 80%;
-  margin: auto;
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  color: $golden;
+  border-bottom: 1px solid $golden;
   img {
-    width: 100%,;
+    width: 100vw,;
   }
-  padding-bottom: 30px;
 }
 
 .photos-container {
-  width: 80%;
+  width: 70%;
   margin: auto;
 }
 
@@ -21,4 +23,11 @@
     width: 100%;
     height: auto;
   }
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

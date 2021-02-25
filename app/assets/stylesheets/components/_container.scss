@@ -29,8 +29,7 @@
   width: 100%;
 }
 
-.background-golden {
-  background-color: $golden;
+.background {
   min-height: 100vh;
 }
 
@@ -40,10 +39,24 @@
   padding-bottom: 150px;
   width: 80%;
   margin: auto;
-  color: white;
+  color: $golden;
 }
 
 .align-right {
   text-align: right;
   padding-bottom: 20px;
+}
+
+.project-description {
+  height: 100vh;
+  color: $golden;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pfeil {
+  width: 1%;
 }
