@@ -13,14 +13,14 @@
   width: 40px;
 }
 
-#nav-text a {
-  color: white;
-}
-
-#nav-text a:hover {
-  color: transparent;
-  transition: 0.6s;
-  text-decoration: none;
+#nav-text {
+  color: $golden !important;
+  &:hover {
+    color: rgba(165, 135, 105, 0.314) !important;
+    text-shadow: 0px 0px 14px $golden;
+    transition: 0.8s;
+    text-decoration: none;
+  }
 }
 
 .linearGradient {

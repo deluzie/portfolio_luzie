@@ -5,7 +5,7 @@
   color: $golden;
   border-bottom: 1px solid $golden;
   img {
-    width: 100vw,;
+    width: 100%;
   }
 }
 
@@ -30,4 +30,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.no-padding {
+  padding: 0px;
 }

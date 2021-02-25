@@ -1,6 +1,12 @@
 class ProjectsController < ApplicationController
   def index
-    @projects = Project.all
+    if params[:query].present?
+      sql_query = " \
+        projects.category @@ :query"
+      @projects = Project.where(sql_query, query: "%#{params[:query]}%")
+    else
+      @projects = Project.order("year DESC").all
+    end
   end
 
   def show
@@ -24,6 +30,6 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:title, :description, :category, :year, :main_picture, photos: [])
+    params.require(:project).permit(:title, :description, :introduction, :category, :year, :main_picture, primary_photos: [], secondary_photos: [])
   end
 end
