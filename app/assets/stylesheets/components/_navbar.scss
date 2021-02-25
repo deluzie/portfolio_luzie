@@ -1,6 +1,8 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: $light-gray;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +11,36 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+#nav-text a {
+  color: white;
+}
+
+#nav-text a:hover {
+  color: transparent;
+  transition: 0.6s;
+  text-decoration: none;
+}
+
+.linearGradient {
+  height: 100px;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(165, 135, 105),
+      rgb(165, 135, 105),
+      rgba(165, 135, 105, 0.834),
+      rgba(165, 135, 105, 0.314),
+      rgba(165, 135, 105, 0)
+   );
+}
+
+.light-grey {
+  border-bottom: 1px solid $golden;
+  background-color: rgba(244, 244, 244, 0.8)
+}
+
+.golden {
+  border-bottom: 1px solid white;
+  background-color: rgb(165, 135, 105)
 }

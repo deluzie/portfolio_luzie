@@ -2,7 +2,7 @@
   background-image: url(galaxyx.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 100vw;
+  min-height: 800px;
 }
 
 .project-card {
@@ -23,4 +23,40 @@
   padding-top: 5%;
   width: 90%;
   margin: auto;
+}
+
+.carousel-container {
+  width: 100%;
+}
+
+.background {
+  min-height: 100vh;
+}
+
+.show-content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 150px;
+  width: 80%;
+  margin: auto;
+  color: $golden;
+}
+
+.align-right {
+  text-align: right;
+  padding-bottom: 20px;
+}
+
+.project-description {
+  height: 100vh;
+  color: $golden;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pfeil {
+  width: 1%;
 }

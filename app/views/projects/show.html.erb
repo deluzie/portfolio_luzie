@@ -1,1 +1,37 @@
 
+
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon light-grey">
+  <%= link_to "/" do %>
+    <%= image_tag("logo_ld.png", width:'200', class: "padding-top") %>
+  <% end %>
+  <%= render 'shared/navbar' %>
+</div>
+<div class="background">
+
+  <div class="row main-picture">
+    <div class="col-12">
+      <%= cl_image_tag @project.main_picture.key %>
+      <div class="centered">
+        <h2><%= @project.title %> – <%= @project.year %></h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="row project-description">
+    <div class="col-6 text-center">
+      <p><%= @project.description %></p>
+      <p><i class="fas fa-chevron-down"></i></p>
+    </div>
+  </div>
+
+    <div class="row photos-container">
+      <% @project.photos.each do |photo| %>
+      <div class="col-lg-6 col-sm-12">
+        <div class="project-photo">
+          <%= cl_image_tag photo.key %>
+        </div>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
