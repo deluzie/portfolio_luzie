@@ -2,7 +2,8 @@ class ProjectsController < ApplicationController
   def index
     if params[:query].present?
       sql_query = " \
-        projects.category @@ :query"
+        projects.category @@ :query \
+        OR projects.year @@ :query"
       @projects = Project.where(sql_query, query: "%#{params[:query]}%")
     else
       @projects = Project.order("year DESC").all

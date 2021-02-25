@@ -22,13 +22,13 @@
     <% @projects.each do |project| %>
     <div class="row index-element content">
       <div class="col-3 index-column text">
-        <p><%= link_to project.title, project_path(project) %></p>
+        <p><%= link_to project.title, project_path(project), class: "stretched-link"%></p>
       </div>
       <div class="col-3 index-column text">
-        <p><%= link_to project.year, project_path(project) %></p>
+        <p><%= link_to project.year, project_path(project), class: "stretched-link" %></p>
       </div>
       <div class="col-3 index-column text">
-        <p><%= link_to project.category, project_path(project) %></p>
+        <p><%= link_to project.category, project_path(project), class: "stretched-link" %></p>
       </div>
       <div class="col-3 index-column pictures">
         <p>+</p>
@@ -38,4 +38,11 @@
       </div>
     </div>
     <% end %>
+
+    <div class="row category">
+      <div class="col-6 text-center">
+        <%= link_to "Reset & see all projects", projects_path, class: "btn btn-outline-primary", role:"button" %>
+      </div>
+    </div>
   </div>
+
