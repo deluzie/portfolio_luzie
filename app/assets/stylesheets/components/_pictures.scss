@@ -1,0 +1,33 @@
+.main-picture {
+  width: 100vw;
+  position: relative;
+  text-align: center;
+  color: $golden;
+  border-bottom: 1px solid $golden;
+  img {
+    width: 100vw,;
+  }
+}
+
+.photos-container {
+  width: 70%;
+  margin: auto;
+}
+
+.project-photo {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  padding-bottom: 30px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
