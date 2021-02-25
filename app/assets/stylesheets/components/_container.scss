@@ -1,34 +1,3 @@
-.galaxy-container {
-  background-image: url(galaxyx.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  min-height: 800px;
-}
-
-.project-card {
-  width: 20px;
-
-  a {
-    text-decoration: none;
-    color: $golden;
-  }
-}
-
-.index-content {
-  width: 80%;
-  margin: auto;
-}
-
-.page-container {
-  padding-top: 5%;
-  width: 90%;
-  margin: auto;
-}
-
-.carousel-container {
-  width: 100%;
-}
-
 .background {
   min-height: 100vh;
 }
@@ -79,4 +48,10 @@
 
 .pfeil {
   width: 1%;
+}
+
+.index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

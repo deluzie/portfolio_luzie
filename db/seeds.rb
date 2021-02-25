@@ -52,3 +52,83 @@ It can be purchased here.",
 
   project.save!
 end
+
+1.times do |counter|
+
+  project = Project.new(
+    title: "jenever typologies",
+    introduction: "Inspired by the craftsmanship of thuringian glass blowers, Handwerker was created as a new interpretation of the traditional forest glass with its distinct green colour which is linked to the iron contents of the thuringian forests soil.",
+    description: "Glass objects made in these glassworks today are often produced with so much perfection that the outcome of the artistic craft of glassblowing can often not be differenciated from indutrialized mass produced glass by pure perception.
+    Bringing the hand into the center of the manufaction process, each glass blower leaves an individual mark by deforming the glass simply holding on to it with a heat resistant glove, that is typically used in the workshop. This imprint is a link to and trace of its unique manufacturing process and at the same time lets the user hold the glass easily in use. The series consists of a glass and a decanter, each a little different to another. This project was put into practice together with ELIAS Farbglashütte Lauscha, who also made it possible for us to work with  glassblowers in their workshop.
+    This design is a collaboration with Maiella Di Donato and was realized by the Farbglashütte ELIAS Lauscha GmbH.
+It can be purchased here.",
+    category: "glass",
+    year: "2017"
+    )
+  project.user = user
+
+  file = URI.open('https://manifestofpractice.com/wp-content/uploads/2019/01/Bildschirmfoto-2019-01-09-um-16.37.36-768x582.png')
+  project.main_picture.attach(io: file, filename: "nes_#{counter}.png", content_type: 'image/png')
+
+  project.save!
+end
+
+1.times do |counter|
+
+  project = Project.new(
+    title: "blabla",
+    introduction: "Inspired by the craftsmanship of thuringian glass blowers, Handwerker was created as a new interpretation of the traditional forest glass with its distinct green colour which is linked to the iron contents of the thuringian forests soil.",
+    description: "Glass objects made in these glassworks today are often produced with so much perfection that the outcome of the artistic craft of glassblowing can often not be differenciated from indutrialized mass produced glass by pure perception.
+    Bringing the hand into the center of the manufaction process, each glass blower leaves an individual mark by deforming the glass simply holding on to it with a heat resistant glove, that is typically used in the workshop. This imprint is a link to and trace of its unique manufacturing process and at the same time lets the user hold the glass easily in use. The series consists of a glass and a decanter, each a little different to another. This project was put into practice together with ELIAS Farbglashütte Lauscha, who also made it possible for us to work with  glassblowers in their workshop.
+    This design is a collaboration with Maiella Di Donato and was realized by the Farbglashütte ELIAS Lauscha GmbH.
+It can be purchased here.",
+    category: "glass",
+    year: "2017"
+    )
+  project.user = user
+
+  file = URI.open('https://manifestofpractice.com/wp-content/uploads/2019/01/Bildschirmfoto-2019-01-09-um-16.37.36-768x582.png')
+  project.main_picture.attach(io: file, filename: "nes_#{counter}.png", content_type: 'image/png')
+
+  project.save!
+end
+
+1.times do |counter|
+
+  project = Project.new(
+    title: "tolles projetto",
+    introduction: "Inspired by the craftsmanship of thuringian glass blowers, Handwerker was created as a new interpretation of the traditional forest glass with its distinct green colour which is linked to the iron contents of the thuringian forests soil.",
+    description: "Glass objects made in these glassworks today are often produced with so much perfection that the outcome of the artistic craft of glassblowing can often not be differenciated from indutrialized mass produced glass by pure perception.
+    Bringing the hand into the center of the manufaction process, each glass blower leaves an individual mark by deforming the glass simply holding on to it with a heat resistant glove, that is typically used in the workshop. This imprint is a link to and trace of its unique manufacturing process and at the same time lets the user hold the glass easily in use. The series consists of a glass and a decanter, each a little different to another. This project was put into practice together with ELIAS Farbglashütte Lauscha, who also made it possible for us to work with  glassblowers in their workshop.
+    This design is a collaboration with Maiella Di Donato and was realized by the Farbglashütte ELIAS Lauscha GmbH.
+It can be purchased here.",
+    category: "glass",
+    year: "2017"
+    )
+  project.user = user
+
+  file = URI.open('https://manifestofpractice.com/wp-content/uploads/2019/01/Bildschirmfoto-2019-01-09-um-16.37.36-768x582.png')
+  project.main_picture.attach(io: file, filename: "nes_#{counter}.png", content_type: 'image/png')
+
+  project.save!
+end
+
+1.times do |counter|
+
+  project = Project.new(
+    title: "superklasse",
+    introduction: "Inspired by the craftsmanship of thuringian glass blowers, Handwerker was created as a new interpretation of the traditional forest glass with its distinct green colour which is linked to the iron contents of the thuringian forests soil.",
+    description: "Glass objects made in these glassworks today are often produced with so much perfection that the outcome of the artistic craft of glassblowing can often not be differenciated from indutrialized mass produced glass by pure perception.
+    Bringing the hand into the center of the manufaction process, each glass blower leaves an individual mark by deforming the glass simply holding on to it with a heat resistant glove, that is typically used in the workshop. This imprint is a link to and trace of its unique manufacturing process and at the same time lets the user hold the glass easily in use. The series consists of a glass and a decanter, each a little different to another. This project was put into practice together with ELIAS Farbglashütte Lauscha, who also made it possible for us to work with  glassblowers in their workshop.
+    This design is a collaboration with Maiella Di Donato and was realized by the Farbglashütte ELIAS Lauscha GmbH.
+It can be purchased here.",
+    category: "glass",
+    year: "2017"
+    )
+  project.user = user
+
+  file = URI.open('https://manifestofpractice.com/wp-content/uploads/2019/01/Bildschirmfoto-2019-01-09-um-16.37.36-768x582.png')
+  project.main_picture.attach(io: file, filename: "nes_#{counter}.png", content_type: 'image/png')
+
+  project.save!
+end
