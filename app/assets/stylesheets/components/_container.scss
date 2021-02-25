@@ -47,8 +47,28 @@
   padding-bottom: 20px;
 }
 
-.project-description {
+.project-introduction {
   height: 100vh;
+  color: $golden;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-description {
+  height: 70vh;
+  color: $golden;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category {
+  padding-top: 85px;
   color: $golden;
   margin: auto;
   width: 80%;
