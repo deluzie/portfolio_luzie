@@ -10,6 +10,9 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid $golden;
+  img {
+    opacity: 0;
+  }
 }
 
 .content:hover {
@@ -17,6 +20,19 @@
     color: white;
     border-bottom: 1px solid white;
     transition: 0.8s;
+
+    img {
+      padding-top: 0px;
+      position: relative;
+      top: 0;
+      opacity: 1;
+      width: 100%;
+      z-index: 2000;
+    }
+
+    .pictures p {
+      display: none;
+    }
 }
 
 .index-element:hover {
@@ -43,30 +59,12 @@
   }
 }
 
-
 .pictures {
   height: 0px;
   padding-right: 0px;
 
   p {
-    padding-top: 13px;
-  }
-
-  img {
-    opacity: 0;
-  }
-
-  &:hover img {
-    padding-top: 0px;
-    position: relative;
-    top: 0;
-    opacity: 1;
-    width: 100%;
-    z-index: 2000;
-  }
-
-  &:hover p {
-    display: none;
+    padding-top: 16px;
   }
 }
 
