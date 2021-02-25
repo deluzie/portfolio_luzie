@@ -1,0 +1,54 @@
+*{
+    margin:0;
+}
+html, body {
+    height:100%;
+}
+
+.overlay {
+    overflow: hidden;
+    position: absolute;
+    display:none;
+    right:0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(165, 135, 105, 0.334);
+    z-index: 1000;
+}
+
+.popup {
+  position: relative;
+  margin: auto;
+  width: 70%;
+  margin-top: 110px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.button-photo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: $golden;
+  border: 1px solid $golden;
+  border-radius: 50%;
+  cursor: pointer;
+  text-shadow: none;
+  width: 35px;
+  height: 25px;
+  opacity: 0.8;
+  &:hover {
+  text-decoration: none;
+  transition: 0.9s;
+  opacity: 0.9;
+  }
+}
+
+.closing-x {
+  line-height: 10px;
+}
+
