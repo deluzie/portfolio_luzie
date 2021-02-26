@@ -4,7 +4,6 @@
   align-items: flex-start;
   border-top: 1px solid $golden;
   padding: 30px;
-  padding-bottom: 50px;
   margin-top: 130px;
   img {
     padding-bottom: 10px;
@@ -13,10 +12,6 @@
     color: $golden;
     margin-bottom: 0px;
   }
-}
-
-.footer-text-right {
-  text-align: right;
   a:hover {
     color: rgba(165, 135, 105, 0.314) !important;
     text-shadow: 0px 0px 14px $golden;
@@ -24,3 +19,8 @@
     text-decoration: none;
   }
 }
+
+.footer-text-right {
+  text-align: right;
+}
+

@@ -6,14 +6,15 @@
 }
 
 .about {
-  padding-top: 5%;
-  padding-bottom: 3%;
+  height: 100vh;
+  padding-top: 3%;
+  padding-bottom: 7%;
   color: $golden;
   margin: auto;
-  width: 80%;
+  width: 60%;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: space-between;
+  align-items: center;
 
   p {
     margin-bottom: 0px;
@@ -21,12 +22,12 @@
 }
 
 .exhibitions {
-  width: 80%;
+  width: 60%;
   color: $golden;
   margin: auto;
   display: flex;
-  justify-content: center;
   align-items: flex-start;
+  padding-bottom: 10%;
 
   ul {
     font-weight: lighter;
@@ -46,3 +47,4 @@
 .about-me p {
   padding-top: 2rem;
 }
+

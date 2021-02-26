@@ -6,5 +6,7 @@ Rails.application.routes.draw do
 
   # resources :contacts, only: [:new, :create]
 
-  resources :pages, only: [:about, :legal_notice]
+  get "/about", to: "pages#about"
+  get "/legal-notice", to: "pages#legal_notice"
+
 end
