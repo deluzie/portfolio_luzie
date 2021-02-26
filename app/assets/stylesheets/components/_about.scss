@@ -1,0 +1,48 @@
+.portrait {
+  width: 100%;
+    img {
+      width: 100%;
+    }
+}
+
+.about {
+  padding-top: 5%;
+  padding-bottom: 3%;
+  color: $golden;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+.exhibitions {
+  width: 80%;
+  color: $golden;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  ul {
+    font-weight: lighter;
+    padding-bottom: 40px;
+  }
+
+  p {
+    margin-bottom: 0px;
+  }
+
+  .title-about {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+}
+
+.about-me p {
+  padding-top: 2rem;
+}

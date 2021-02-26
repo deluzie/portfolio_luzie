@@ -10,7 +10,7 @@
   </div>
 
   <div class="row project-introduction">
-    <div class="col-6 text-center">
+    <div class="col-lg-6 col-sm-12 text-center">
       <p><%= @project.introduction %></p>
       <p><i class="fas fa-chevron-down"></i></p>
     </div>
@@ -27,7 +27,7 @@
   </div>
 
   <div class="row project-description">
-    <div class="col-6 text-center">
+    <div class="col-lg-6 col-sm-12 text-center">
       <p><%= @project.description %></p>
     </div>
   </div>
@@ -43,7 +43,7 @@
   </div>
 
   <div class="row category">
-    <div class="col-6 text-center">
+    <div class="col-lg-6 col-sm-12 text-center">
       <%= link_to @project.category, projects_path(query: @project.category), class: "btn btn-outline-primary", role:"button" %>
     </div>
   </div>
