@@ -1,5 +1,6 @@
 class ProjectsController < ApplicationController
   def index
+
     if params[:query].present?
       sql_query = " \
         projects.category @@ :query \
