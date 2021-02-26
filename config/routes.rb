@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'projects#index'
+  root to: 'pages#home'
+
   resources :projects, only: [:show, :index, :new, :create] do
   end
-  get "/contact", to: "pages#contact"
-  get "/about", to: "pages#about"
-  get "/legal-notice", to: "pages#legal_notice"
+
+  resources :contacts, only: [:new, :create]  do
+  end
+
+  resources :pages, only: [:about, :legal_notice] do
+  end
+
 end
