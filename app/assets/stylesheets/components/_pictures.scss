@@ -1,11 +1,19 @@
 .main-picture {
   width: 100vw;
+  height: 100vh;
   position: relative;
   text-align: center;
   color: $golden;
+}
+
+.main-image-container {
+  height: 100vh;
+  max-height: 100vh;
   border-bottom: 1px solid $golden;
   img {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
   }
 }
 
