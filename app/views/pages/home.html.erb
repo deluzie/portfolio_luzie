@@ -1,5 +1,7 @@
-<div class="col-12 main-image-container no-padding">
-  <%= cl_image_tag @project.main_picture.key %>
+<div class="row main-picture">
+  <div class="col-12 main-image-container no-padding">
+    <%= cl_image_tag @project.main_picture.key %>
+  </div>
 </div>
 <div class="index-container">
   <%= render 'shared/list' %>
