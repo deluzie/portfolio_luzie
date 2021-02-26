@@ -1,0 +1,36 @@
+
+
+    <div class="row index-element header">
+      <div class="col-3 index-column text header">
+        <p>PROJECT</p>
+      </div>
+      <div class="col-3 index-column text header">
+        <p>DATE</p>
+      </div>
+      <div class="col-3 index-column text header">
+        <p>CATEGORY</p>
+      </div>
+      <div class="col-3 index-column text header">
+
+      </div>
+    </div>
+
+    <% @projects.each do |project| %>
+    <div class="row index-element content">
+      <div class="col-3 index-column text">
+        <p><%= link_to project.title, project_path(project), class: "stretched-link"%></p>
+      </div>
+      <div class="col-3 index-column text">
+        <p><%= link_to project.year, project_path(project), class: "stretched-link" %></p>
+      </div>
+      <div class="col-3 index-column text">
+        <p><%= link_to project.category, project_path(project), class: "stretched-link" %></p>
+      </div>
+      <div class="col-3 index-column pictures">
+        <p>+</p>
+        <div class='photo'>
+          <%= cl_image_tag project.main_picture.key %>
+        </div>
+      </div>
+    </div>
+    <% end %>
