@@ -1,6 +1,6 @@
 class ProjectsController < ApplicationController
+  # skip_before_action :authenticate_user!, only: %i[index show]
   def index
-
     if params[:query].present?
       sql_query = " \
         projects.category @@ :query \
@@ -27,6 +27,25 @@ class ProjectsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def edit
+    @project = Project.find(params[:id])
+    # authorize @project
+  end
+
+  def update
+    # authorize @project
+    @project = Project.find(params[:id])
+    @project.update(project_params)
+    redirect_to projects_path
+  end
+
+  def destroy
+    @project = Project.find(params[:id])
+    # authorize @project
+    @project.destroy
+    redirect_to projects_path
   end
 
   private

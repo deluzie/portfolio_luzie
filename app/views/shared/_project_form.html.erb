@@ -1,0 +1,11 @@
+<%= simple_form_for(@project) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :year %>
+  <%= f.input :introduction, :as => :text %>
+  <%= f.input :category, :collection => %w[design art code photography illustration material glass writing product graphic] %>
+  <%= f.input :description, :as => :text %>
+  <%= f.input :main_picture, as: :file, input_html: { multiple: false } %>
+  <%= f.input :primary_photos, as: :file, input_html: { multiple: true } %>
+  <%= f.input :secondary_photos, as: :file, input_html: { multiple: true } %>
+  <%= f.submit "Save", class: "btn btn-outline-primary btn-lg btn-block" %>
+<% end %>
