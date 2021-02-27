@@ -4,8 +4,8 @@
   <div class="row main-picture">
     <div class="col-12 main-image-container no-padding">
       <%= cl_image_tag @project.main_picture.key %>
-      <div class="centered">
-        <h2><%= @project.title.upcase %> – <%= @project.year %></h2>
+      <div class="centered show-title">
+        <h2><%= @project.title %> – <%= @project.year %></h2>
         <% if user_signed_in? %>
           <div>
             <p><%= link_to '<i class="fas fa-minus-circle"></i>'.html_safe, project_path(@project), method: :delete, data: { confirm: "Are you sure?" } %></p>
@@ -36,6 +36,7 @@
   <div class="row project-description">
     <div class="col-lg-6 col-sm-12 text-center">
       <p><%= @project.description %></p>
+      <p><i class="fas fa-chevron-down"></i></p>
     </div>
   </div>
 
@@ -49,9 +50,10 @@
     <% end %>
   </div>
 
-  <div class="row category">
-    <div class="col-lg-6 col-sm-12 text-center">
-      <%= link_to @project.category, projects_path(query: @project.category), class: "btn btn-outline-primary", role:"button" %>
+  <div class="row category tag">
+    <div class="col-lg-8 col-sm-12 text-center">
+      <%= link_to "more #{@project.category} projects", projects_path(query: @project.category), class: "btn btn-outline-primary", role:"button" %>
+      <%= link_to "See all projects", projects_path, class: "btn btn-outline-primary", role:"button" %>
     </div>
   </div>
 
