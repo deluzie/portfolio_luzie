@@ -6,10 +6,12 @@
       <%= cl_image_tag @project.main_picture.key %>
       <div class="centered">
         <h2><%= @project.title.upcase %> – <%= @project.year %></h2>
-        <div>
-          <p><%= link_to '<i class="fas fa-minus-circle"></i>'.html_safe, project_path(@project), method: :delete %></p>
-          <p><%= link_to '<i class="far fa-edit"></i>'.html_safe, edit_project_path(@project) %></p>
-        </div>
+        <% if user_signed_in? %>
+          <div>
+            <p><%= link_to '<i class="fas fa-minus-circle"></i>'.html_safe, project_path(@project), method: :delete, data: { confirm: "Are you sure?" } %></p>
+            <p><%= link_to '<i class="far fa-edit"></i>'.html_safe, edit_project_path(@project) %></p>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>

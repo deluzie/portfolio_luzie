@@ -19,6 +19,11 @@
       <li class="nav-item">
         <%= link_to "CONTACT", "mailto:luziedeubel@gmail.com", class: "nav-link", id: "nav-text" %>
       </li>
+      <% if user_signed_in? %>
+        <li class="nav-item">
+          <%= link_to "LOG OUT", destroy_user_session_path, method: :delete, class: "nav-link", id: "nav-text"  %>
+        </li>
+      <% end %>
     </ul>
   </div>
 
