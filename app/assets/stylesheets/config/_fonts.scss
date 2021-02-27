@@ -68,6 +68,15 @@ body {
       width: 150px;
     }
 
+    .navbar-toggler.btn-outline-primary {
+      color: #a58769;
+      border: 1px solid #a58769 !important;
+      &:hover {
+        color: white !important;
+        transition: 0.8s;
+      }
+    }
+
     .btn-outline-primary {
       font-size: 10px !important;
     }
