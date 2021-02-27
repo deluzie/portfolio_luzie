@@ -1,8 +1,12 @@
+<%= render 'shared/navbar' %>
 <div class="index-container">
   <%= render 'shared/list' %>
-  <div class="row reset">
-    <div class="col-6 text-center">
-      <%= link_to "Reset & see all projects", root_path, class: "btn btn-outline-primary", role:"button" %>
+
+  <% if params[:query].present? %>
+    <div class="row reset">
+      <div class="col-6 text-center">
+        <%= link_to "Reset & see all projects", root_path, class: "btn btn-outline-primary", role:"button" %>
+      </div>
     </div>
-  </div>
+  <% end %>
 </div>

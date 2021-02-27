@@ -1,10 +1,11 @@
+<%= render 'shared/navbar' %>
 <div class="background">
 
   <div class="row main-picture">
     <div class="col-12 main-image-container no-padding">
       <%= cl_image_tag @project.main_picture.key %>
       <div class="centered">
-        <h2><%= @project.title %> – <%= @project.year %></h2>
+        <h2><%= @project.title.upcase %> – <%= @project.year %></h2>
       </div>
     </div>
   </div>

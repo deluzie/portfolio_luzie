@@ -3,6 +3,8 @@
   position: sticky;
   top: 0;
   z-index: 100;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -14,6 +16,7 @@
 }
 
 #nav-text {
+  padding-left: 2px;
   color: $golden !important;
   &:hover {
     color: rgba(165, 135, 105, 0.314) !important;
