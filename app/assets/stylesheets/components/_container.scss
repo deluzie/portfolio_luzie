@@ -23,7 +23,7 @@
 }
 
 .project-introduction {
-  height: 100vh;
+  height: 90vh;
   color: $golden;
   margin: auto;
   width: 80%;
@@ -33,7 +33,7 @@
 }
 
 .project-description {
-  height: 70vh;
+  height: 90vh;
   color: $golden;
   margin: auto;
   width: 80%;
@@ -43,14 +43,19 @@
 }
 
 .category {
-  padding-bottom: 20%;
-  padding-top: 85px;
   color: $golden;
   margin: auto;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.tag {
+  padding: 8%;
+  a {
+    margin: 8px;
+  }
 }
 
 .pfeil {
