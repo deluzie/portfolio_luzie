@@ -34,3 +34,58 @@ body h1 {
   font-weight: lighter;
   font-size: 148px;
 }
+
+body {
+  @media only screen and (max-width: 770px){
+    .start-image-container a {
+      font-size: 60px;
+    }
+
+    .start-image-container a:hover {
+      font-size: 60px;
+    }
+
+
+    .start-image-container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      height: 100vh;
+    }
+
+    p, a {
+      font-size: 10px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    .footer-golden {
+      padding: 18px;
+    }
+
+    .footer-golden img {
+      width: 150px;
+    }
+
+    .btn-outline-primary {
+      font-size: 10px !important;
+    }
+
+    .project-introduction, .project-description {
+      height: 50vh;
+    }
+
+    .index-column.text {
+      padding: 6px;
+    }
+
+    .pictures p {
+      padding-top: 6px;
+    }
+
+    .index-container {
+      min-height: 100vh;
+    }
+  }
+}
