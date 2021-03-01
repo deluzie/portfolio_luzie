@@ -2,7 +2,10 @@
   <div class="col-12 start-image-container text-center">
     <%= image_tag("galaxyx.png") %>
     <div class="col-sm-12 col-lg-8 centered show-title">
-      <%= link_to "LUZIE DEUBEL DESIGN RESEARCH CODE", projects_path, class: "stretched-link" %></h2>
+      <%= link_to "LUZIE DEUBEL", projects_path %>
+      <%= link_to "DESIGN",projects_path(query: "design"), role:"button" %>
+      <%= link_to "RESEARCH",projects_path(query: "research"), role:"button" %>
+      <%= link_to "CODE", projects_path(query: "code"), role:"button" %>
     </div>
   </div>
 </div>

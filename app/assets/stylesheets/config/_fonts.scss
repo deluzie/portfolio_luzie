@@ -39,6 +39,9 @@ body {
   @media only screen and (max-width: 770px){
     .start-image-container a {
       font-size: 60px;
+      text-decoration: underline;
+      text-shadow: none;
+      color: #a58769;
     }
 
     .start-image-container a:hover {
@@ -50,10 +53,6 @@ body {
       padding-top: 40px;
       padding-bottom: 40px;
       height: 100vh;
-      a {
-        text-shadow: none;
-        color: #a58769;
-      }
     }
 
     p, a {
@@ -66,6 +65,9 @@ body {
 
     .footer-golden {
       padding: 9px;
+      a, p {
+        font-size: 10px;
+      }
     }
 
     .navbar {
