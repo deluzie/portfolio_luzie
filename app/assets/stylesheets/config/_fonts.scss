@@ -39,6 +39,9 @@ body {
   @media only screen and (max-width: 770px){
     .start-image-container a {
       font-size: 60px;
+      text-decoration: underline;
+      text-shadow: none;
+      color: #a58769;
     }
 
     .start-image-container a:hover {
@@ -61,11 +64,14 @@ body {
     }
 
     .footer-golden {
-      padding: 18px;
+      padding: 9px;
+      a, p {
+        font-size: 10px;
+      }
     }
 
-    .footer-golden img {
-      width: 150px;
+    .navbar {
+      padding-left: 9px;
     }
 
     .navbar-toggler.btn-outline-primary {
@@ -75,6 +81,15 @@ body {
         color: white !important;
         transition: 0.8s;
       }
+    }
+
+    .navbar-nav {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    #nav-text {
+      text-align: center;
     }
 
     .btn-outline-primary {
@@ -95,6 +110,10 @@ body {
 
     .index-container {
       min-height: 100vh;
+    }
+
+    .tag {
+      padding-bottom: 50px;
     }
   }
 }
