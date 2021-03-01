@@ -52,7 +52,10 @@
 
   <div class="row category tag">
     <div class="col-lg-8 col-sm-12 text-center">
-      <%= link_to "more projects", projects_path, class: "btn btn-outline-primary", role:"button" %>
+      <%=raw tag_links(@project.all_tags)%>
+      <% @project.tags.each do |tag| %>
+        <%= link_to tag.name, projects_path(tag: tag.name), class: "btn btn-outline-primary", role:"button" %>
+      <% end %>
       <%= link_to "See all projects", projects_path, class: "btn btn-outline-primary", role:"button" %>
     </div>
   </div>

@@ -5,9 +5,8 @@ Rails.application.routes.draw do
   resources :projects  do
     resources :tags, only: [:create, :new]
   end
-
-
   # resources :contacts, only: [:new, :create]
+  get 'tags/:tag', to: 'projects#index', as: "tag"
 
   get "/about", to: "pages#about"
   get "/legal-notice", to: "pages#legal_notice"
