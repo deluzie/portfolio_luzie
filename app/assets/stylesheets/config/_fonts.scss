@@ -50,6 +50,10 @@ body {
       padding-top: 40px;
       padding-bottom: 40px;
       height: 100vh;
+      a {
+        text-shadow: none;
+        color: #a58769;
+      }
     }
 
     p, a {
@@ -61,11 +65,11 @@ body {
     }
 
     .footer-golden {
-      padding: 18px;
+      padding: 9px;
     }
 
-    .footer-golden img {
-      width: 150px;
+    .navbar {
+      padding-left: 9px;
     }
 
     .navbar-toggler.btn-outline-primary {
@@ -75,6 +79,15 @@ body {
         color: white !important;
         transition: 0.8s;
       }
+    }
+
+    .navbar-nav {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+
+    #nav-text {
+      text-align: center;
     }
 
     .btn-outline-primary {
@@ -95,6 +108,10 @@ body {
 
     .index-container {
       min-height: 100vh;
+    }
+
+    .tag {
+      padding-bottom: 50px;
     }
   }
 }
