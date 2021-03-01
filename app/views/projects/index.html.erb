@@ -2,7 +2,7 @@
 <div class="index-container">
   <%= render 'shared/list' %>
 
-  <% if params[:query].present? %>
+  <% if params[:tag].present? %>
     <div class="row reset">
       <div class="col-8 text-center">
         <%= link_to "Reset & see all projects", projects_path, class: "btn btn-outline-primary", role:"button" %>

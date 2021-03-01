@@ -1,13 +1,24 @@
 <%= render 'shared/navbar' %>
 <div class="container">
   <div class="row justify-content-center">
-    <div class="form">
-      <div style="align-items: center">
-        <h2>Add new Project: </h2>
-        <div>
-          <%= render 'shared/project_form' %>
+    <% if user_signed_in? %>
+      <div class="form">
+        <div style="align-items: center">
+          <h2>Add new Project: </h2>
+          <div>
+            <%= render 'shared/project_form' %>
+          </div>
         </div>
       </div>
-    </div>
+    <% else %>
+
+        <div class="row project-description no-user">
+          <div class="col-lg-6 col-sm-12 text-center">
+            <h2>Hey, you should leave this to me!</h2>
+            <%= link_to "Please go back and check out my work.", "/projects" %>
+          </div>
+        </div>
+
+    <% end %>
   </div>
 </div>

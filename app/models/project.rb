@@ -1,5 +1,5 @@
 class Project < ApplicationRecord
-  has_many :taggings
+  has_many :taggings, dependent: :destroy
   has_many :tags, through: :taggings
   belongs_to :user
   has_one_attached :main_picture

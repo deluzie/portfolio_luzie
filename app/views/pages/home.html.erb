@@ -3,9 +3,9 @@
     <%= image_tag("galaxyx.png") %>
     <div class="col-sm-12 col-lg-8 centered show-title">
       <%= link_to "LUZIE DEUBEL", projects_path %>
-      <%= link_to "DESIGN",projects_path(query: "design"), role:"button" %>
-      <%= link_to "RESEARCH",projects_path(query: "research"), role:"button" %>
-      <%= link_to "CODE", projects_path(query: "code"), role:"button" %>
+      <%= link_to "DESIGN",projects_path(tag: "design"), role:"button" %>
+      <%= link_to "RESEARCH",projects_path(tag: "research"), role:"button" %>
+      <%= link_to "CODE", projects_path(tag: "code"), role:"button" %>
     </div>
   </div>
 </div>
