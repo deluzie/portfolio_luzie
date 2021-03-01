@@ -1,10 +1,11 @@
 class ProjectsController < ApplicationController
   def index
-    if params[:query].present?
-      sql_query = " \
-        projects.category @@ :query \
-        OR projects.year @@ :query"
-      @projects = Project.where(sql_query, query: "%#{params[:query]}%")
+    if params[:tag]
+      @projects = Project.tagged_with(params[:tag])
+    # if params[:query].present?
+    #   sql_query = " \
+    #     OR projects.year @@ :query"
+    #   @projects = Project.joins(:taggings).where(sql_query, query: "%#{params[:query]}%")
     else
       @projects = Project.order("year DESC").all
     end
@@ -24,7 +25,7 @@ class ProjectsController < ApplicationController
     if @project.save
       redirect_to project_path(@project)
     else
-      render :new
+      render :new, notice: "Somthing went wrong..."
     end
   end
 
@@ -47,6 +48,6 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:title, :description, :introduction, :category, :year, :main_picture, primary_photos: [], secondary_photos: [])
+    params.require(:project).permit(:all_tags, :title, :description, :introduction, :year, :main_picture, primary_photos: [], secondary_photos: [])
   end
 end

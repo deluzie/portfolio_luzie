@@ -5,9 +5,18 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "deleting all records..."
+
+Tagging.destroy_all
+
+Tag.destroy_all
+
 Project.destroy_all
 
 User.destroy_all
+
+
+puts "creating new records..."
 
 user = User.create(
   email: "luzie@luzie.com",
@@ -22,7 +31,6 @@ user = User.create(
             What if this present time, in which technical complexity has overcome peoples comprehension of the world they live in, could be encountered by means of design?",
     description: "In an entanglement of man and machine, the analogue 3D-printer produces tangible objects. Designing numerous containers in exemplary use, 'the man-machine' is able to make a mutual dependence visible. By using the pantograph-method as an analogue way of data transmission, the results are not only 3-dimensional objects, but also correlating drawings, which are a reference to the individual process of their creation.
             As an addition to the machine, a digital web-based archive collects experimental approaches to 3D-printing and other technology-based production techniques, to discover the possibilities for designers and artist that lay within.",
-    category: "design",
     year: "2019"
     )
   project.user = user
@@ -31,6 +39,8 @@ user = User.create(
   project.main_picture.attach(io: file, filename: "nes_#{counter}.jpg", content_type: 'image/jpg')
 
   project.save!
+  project.tags.create name: "research"
+  project.tags.create name: "design"
 end
 
 1.times do |counter|
@@ -42,7 +52,6 @@ end
     Bringing the hand into the center of the manufaction process, each glass blower leaves an individual mark by deforming the glass simply holding on to it with a heat resistant glove, that is typically used in the workshop. This imprint is a link to and trace of its unique manufacturing process and at the same time lets the user hold the glass easily in use. The series consists of a glass and a decanter, each a little different to another. This project was put into practice together with ELIAS Farbglashütte Lauscha, who also made it possible for us to work with  glassblowers in their workshop.
     This design is a collaboration with Maiella Di Donato and was realized by the Farbglashütte ELIAS Lauscha GmbH.
 It can be purchased here.",
-    category: "design",
     year: "2017"
     )
   project.user = user
@@ -62,7 +71,6 @@ end
     Bringing the hand into the center of the manufaction process, each glass blower leaves an individual mark by deforming the glass simply holding on to it with a heat resistant glove, that is typically used in the workshop. This imprint is a link to and trace of its unique manufacturing process and at the same time lets the user hold the glass easily in use. The series consists of a glass and a decanter, each a little different to another. This project was put into practice together with ELIAS Farbglashütte Lauscha, who also made it possible for us to work with  glassblowers in their workshop.
     This design is a collaboration with Maiella Di Donato and was realized by the Farbglashütte ELIAS Lauscha GmbH.
 It can be purchased here.",
-    category: "glass",
     year: "2017"
     )
   project.user = user
@@ -82,7 +90,6 @@ end
     Bringing the hand into the center of the manufaction process, each glass blower leaves an individual mark by deforming the glass simply holding on to it with a heat resistant glove, that is typically used in the workshop. This imprint is a link to and trace of its unique manufacturing process and at the same time lets the user hold the glass easily in use. The series consists of a glass and a decanter, each a little different to another. This project was put into practice together with ELIAS Farbglashütte Lauscha, who also made it possible for us to work with  glassblowers in their workshop.
     This design is a collaboration with Maiella Di Donato and was realized by the Farbglashütte ELIAS Lauscha GmbH.
 It can be purchased here.",
-    category: "glass",
     year: "2017"
     )
   project.user = user
@@ -102,7 +109,6 @@ end
     Bringing the hand into the center of the manufaction process, each glass blower leaves an individual mark by deforming the glass simply holding on to it with a heat resistant glove, that is typically used in the workshop. This imprint is a link to and trace of its unique manufacturing process and at the same time lets the user hold the glass easily in use. The series consists of a glass and a decanter, each a little different to another. This project was put into practice together with ELIAS Farbglashütte Lauscha, who also made it possible for us to work with  glassblowers in their workshop.
     This design is a collaboration with Maiella Di Donato and was realized by the Farbglashütte ELIAS Lauscha GmbH.
 It can be purchased here.",
-    category: "glass",
     year: "2017"
     )
   project.user = user
@@ -122,7 +128,6 @@ end
     Bringing the hand into the center of the manufaction process, each glass blower leaves an individual mark by deforming the glass simply holding on to it with a heat resistant glove, that is typically used in the workshop. This imprint is a link to and trace of its unique manufacturing process and at the same time lets the user hold the glass easily in use. The series consists of a glass and a decanter, each a little different to another. This project was put into practice together with ELIAS Farbglashütte Lauscha, who also made it possible for us to work with  glassblowers in their workshop.
     This design is a collaboration with Maiella Di Donato and was realized by the Farbglashütte ELIAS Lauscha GmbH.
 It can be purchased here.",
-    category: "glass",
     year: "2017"
     )
   project.user = user

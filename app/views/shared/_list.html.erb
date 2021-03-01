@@ -6,7 +6,7 @@
         <p>DATE</p>
       </div>
       <div class="col-3 index-column text header">
-        <p>CATEGORY</p>
+        <p>TAG</p>
       </div>
       <div class="col-3 index-column text header">
 
@@ -22,7 +22,15 @@
         <p><%= link_to project.year, project_path(project), class: "stretched-link" %></p>
       </div>
       <div class="col-3 index-column text">
-        <p><%= link_to project.category, project_path(project), class: "stretched-link" %></p>
+        <% if params[:tag].present? %>
+          <p><%= link_to params[:tag], project_path(project), class: "stretched-link" %></p>
+        <% else %>
+          <% tags = [] %>
+          <% project.tags.each do |tag| %>
+          <% tags << tag.name %>
+          <% end %>
+          <p><%= link_to tags[0], project_path(project), class: "stretched-link" %></p>
+        <% end %>
       </div>
       <div class="col-3 index-column pictures">
         <p>+</p>

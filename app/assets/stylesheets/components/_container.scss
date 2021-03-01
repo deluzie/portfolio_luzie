@@ -1,3 +1,24 @@
+.no-user {
+  height: 77vh;
+  color: $golden;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  a {
+  font-size: 20px;
+  }
+
+  a:hover {
+    color: rgba(165, 135, 105, 0.314) !important;
+    text-shadow: 0px 0px 14px $golden;
+    transition: 0.8s;
+    text-decoration: none;
+  }
+}
+
 .form {
   color: $golden;
   padding: 50px;
