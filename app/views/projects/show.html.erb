@@ -33,6 +33,16 @@
     <% end %>
   </div>
 
+  <% if @project.landscape_picture.present? %>
+    <div class="row photos-container">
+      <div class="col-lg-12 col-sm-12">
+        <div class="project-photo">
+          <%= cl_image_tag @project.landscape_picture.key %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+
   <div class="row project-description">
     <div class="col-lg-6 col-sm-12 text-center">
       <p><%= @project.description %></p>

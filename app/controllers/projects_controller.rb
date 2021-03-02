@@ -48,6 +48,6 @@ class ProjectsController < ApplicationController
   private
 
   def project_params
-    params.require(:project).permit(:all_tags, :title, :description, :introduction, :year, :main_picture, primary_photos: [], secondary_photos: [])
+    params.require(:project).permit(:all_tags, :title, :description, :introduction, :year, :landscape_picture, :main_picture, primary_photos: [], secondary_photos: [])
   end
 end

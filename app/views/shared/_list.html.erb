@@ -1,27 +1,27 @@
     <div class="row index-element header">
-      <div class="col-3 index-column text header">
+      <div class="col-sm-4 col-lg-3 index-column text header title-tag">
         <p>PROJECT</p>
       </div>
-      <div class="col-3 index-column text header">
+      <div class="col-sm-4 col-lg-3 index-column text header date">
         <p>DATE</p>
       </div>
-      <div class="col-3 index-column text header">
+      <div class="col-sm-4 col-lg-3 index-column text header title-tag">
         <p>TAG</p>
       </div>
-      <div class="col-3 index-column text header">
+      <div class="col-sm-0 col-lg-3 index-column text header empty-header">
 
       </div>
     </div>
 
     <% @projects.each do |project| %>
     <div class="row index-element content">
-      <div class="col-3 index-column text">
+      <div class="col-sm-5 col-lg-3 index-column text title-tag">
         <p><%= link_to project.title, project_path(project), class: "stretched-link"%></p>
       </div>
-      <div class="col-3 index-column text">
+      <div class="col-sm-2 col-lg-3 index-column text date">
         <p><%= link_to project.year, project_path(project), class: "stretched-link" %></p>
       </div>
-      <div class="col-3 index-column text">
+      <div class="col-sm-5 col-lg-3 index-column text title-tag">
         <% if params[:tag].present? %>
           <p><%= link_to params[:tag], project_path(project), class: "stretched-link" %></p>
         <% else %>
@@ -32,7 +32,7 @@
           <p><%= link_to tags[0], project_path(project), class: "stretched-link" %></p>
         <% end %>
       </div>
-      <div class="col-3 index-column pictures">
+      <div class="col-sm-0 col-lg-3 index-column pictures">
         <p>+</p>
         <div class='photo'>
           <%= cl_image_tag project.main_picture.key %>
