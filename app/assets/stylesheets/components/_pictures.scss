@@ -18,8 +18,10 @@
 }
 
 .photos-container {
-  width: 70%;
+  width: 62%;
   margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .project-photo {
@@ -30,6 +32,17 @@
   img {
     width: 100%;
     height: auto;
+  }
+}
+
+
+.main-title {
+  border: 1px solid $golden;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  padding: 8px 12px 8px 12px;
+  h2 {
+    margin: 0px;
   }
 }
 

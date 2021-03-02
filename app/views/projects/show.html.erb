@@ -4,7 +4,7 @@
   <div class="row main-picture">
     <div class="col-12 main-image-container no-padding">
       <%= cl_image_tag @project.main_picture.key %>
-      <div class="centered show-title">
+      <div class="centered main-title">
         <h2><%= @project.title %> – <%= @project.year %></h2>
         <% if user_signed_in? %>
           <div>
@@ -19,13 +19,28 @@
   <div class="row project-introduction">
     <div class="col-lg-6 col-sm-12 text-center">
       <p><%= @project.introduction %></p>
-      <p><i class="fas fa-chevron-down"></i></p>
     </div>
   </div>
 
   <div class="row photos-container">
     <% @project.primary_photos.each do |photo| %>
     <div class="col-lg-6 col-sm-12">
+      <div class="project-photo">
+        <%= cl_image_tag photo.key %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+
+  <div class="row project-description">
+    <div class="col-lg-6 col-sm-12 text-center">
+      <p><%= @project.description %></p>
+    </div>
+  </div>
+
+  <div class="row photos-container">
+    <% @project.secondary_photos.each do |photo| %>
+    <div class="col-lg-4 col-sm-12">
       <div class="project-photo">
         <%= cl_image_tag photo.key %>
       </div>
@@ -42,23 +57,6 @@
       </div>
     </div>
   <% end %>
-
-  <div class="row project-description">
-    <div class="col-lg-6 col-sm-12 text-center">
-      <p><%= @project.description %></p>
-      <p><i class="fas fa-chevron-down"></i></p>
-    </div>
-  </div>
-
-  <div class="row photos-container">
-    <% @project.secondary_photos.each do |photo| %>
-    <div class="col-lg-6 col-sm-12">
-      <div class="project-photo">
-        <%= cl_image_tag photo.key %>
-      </div>
-    </div>
-    <% end %>
-  </div>
 
   <div class="row category tag">
     <div class="col-lg-8 col-sm-12 text-center">
