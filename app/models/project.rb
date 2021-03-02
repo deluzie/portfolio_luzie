@@ -5,6 +5,7 @@ class Project < ApplicationRecord
   has_one_attached :main_picture
   has_many_attached :primary_photos
   has_many_attached :secondary_photos
+  has_one_attached :landscape_picture
   validates :title, :introduction, :description, :year, presence: true
 
   def all_tags=(names)

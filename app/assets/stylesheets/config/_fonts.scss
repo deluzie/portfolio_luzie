@@ -35,6 +35,8 @@ body h1 {
   font-size: 148px;
 }
 
+
+
 body {
   @media only screen and (max-width: 770px){
     .start-image-container a {
@@ -42,6 +44,26 @@ body {
       text-decoration: underline;
       text-shadow: none;
       color: #a58769;
+    }
+
+    .pictures {
+      display: none;
+    }
+
+    .index-column.date {
+      width: 10%;
+    }
+
+    .index-column.title-tag {
+      width: 35%;
+    }
+
+    .tag {
+      text-align: right;
+    }
+
+    .empty-header {
+      display: none;
     }
 
     .start-image-container a:hover {
@@ -56,7 +78,7 @@ body {
     }
 
     p, a {
-      font-size: 10px;
+      font-size: 14px;
     }
 
     h2 {
@@ -66,12 +88,16 @@ body {
     .footer-golden {
       padding: 9px;
       a, p {
-        font-size: 10px;
+        font-size: 12px;
       }
     }
 
     .navbar {
       padding-left: 9px;
+    }
+
+    .navbar-collapse ul {
+      padding: 12px;
     }
 
     .navbar-toggler.btn-outline-primary {
@@ -83,9 +109,9 @@ body {
       }
     }
 
-    .navbar-nav {
-      padding-top: 30px;
-      padding-bottom: 30px;
+    .padding-top {
+      padding-top: 8px;
+      padding-bottom: 8px;
     }
 
     #nav-text {
@@ -93,19 +119,19 @@ body {
     }
 
     .btn-outline-primary {
-      font-size: 10px !important;
+      font-size: 12px !important;
     }
 
-    .project-introduction, .project-description {
-      height: 50vh;
+    .project-introduction {
+       min-height: 40vh;
+    }
+
+    .project-description {
+      min-height: 40vh;
     }
 
     .index-column.text {
       padding: 6px;
-    }
-
-    .pictures p {
-      padding-top: 6px;
     }
 
     .index-container {
