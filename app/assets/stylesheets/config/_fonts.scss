@@ -74,6 +74,10 @@ body {
       width: 25%;
     }
 
+    .content {
+      padding: 0px;
+    }
+
     .empty-header {
       display: none;
     }
@@ -106,6 +110,7 @@ body {
 
     .navbar {
       padding-left: 9px;
+      padding-right: 9px;
     }
 
     .navbar-collapse ul {
@@ -143,7 +148,7 @@ body {
     }
 
     .index-column.text {
-      padding: 6px;
+      padding: 9px;
     }
 
     .index-container {
