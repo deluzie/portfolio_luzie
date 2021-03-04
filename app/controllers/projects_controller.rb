@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
   def index
     if params[:tag]
-      @projects = Project.tagged_with(params[:tag])
+      @projects = Project.tagged_with(params[:tag]).order("year DESC")
     # if params[:query].present?
     #   sql_query = " \
     #     OR projects.year @@ :query"

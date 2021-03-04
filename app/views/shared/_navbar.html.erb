@@ -11,20 +11,20 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <%= link_to "DESIGN",projects_path(tag: "design"), class: "nav-link", id: "nav-text" %>
+        <%= link_to "Design",projects_path(tag: "design"), class: "nav-link", id: "nav-text" %>
       </li>
       <li class="nav-item">
-        <%= link_to "RESEARCH",projects_path(tag: "research"), class: "nav-link", id: "nav-text" %>
+        <%= link_to "Research",projects_path(tag: "research"), class: "nav-link", id: "nav-text" %>
       </li>
       <li class="nav-item">
-        <%= link_to "CODE",projects_path(tag: "code"), class: "nav-link", id: "nav-text" %>
+        <%= link_to "Code",projects_path(tag: "code"), class: "nav-link", id: "nav-text" %>
       </li>
       <li class="nav-item">
-        <%= link_to "ABOUT", "/about", class: "nav-link", id: "nav-text" %>
+        <%= link_to "About", "/about", class: "nav-link", id: "nav-text" %>
       </li>
       <% if user_signed_in? %>
         <li class="nav-item">
-          <%= link_to "LOG OUT", destroy_user_session_path, method: :delete, class: "nav-link", id: "nav-text"  %>
+          <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "nav-link", id: "nav-text"  %>
         </li>
       <% end %>
     </ul>
