@@ -57,10 +57,9 @@ body {
 body {
   @media only screen and (max-width: 770px){
     .start-image-container a {
-      font-size: 60px;
-      text-decoration: underline;
-      text-shadow: none;
-      color: #a58769;
+      font-size: 16vw;
+      line-height: 20vw;
+      text-shadow: 0px 0px 10px #a58769;
     }
 
     .index-column.date {
