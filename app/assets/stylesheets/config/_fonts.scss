@@ -51,10 +51,18 @@ body {
       display: none;
     }
 
+    .start-image-container {
+      min-height: 100vh;
+    }
+
     .start-image-container a {
       font-size: 16vmin;
       line-height: 20vmin;
       text-shadow: 0px 0px 10px #a58769;
+      &:hover {
+        font-size: 16vmin;
+        line-height: 20vmin;
+      }
     }
   }
 }
