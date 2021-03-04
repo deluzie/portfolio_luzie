@@ -2,11 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  width: 100%;
+  min-height: 100vh;
   background-size: 100% 100%;
   a {
-    font-size: 18vh;
-    line-height: 20vh;
+    font-size: 20vmin;
+    line-height: 22vmin;
     text-align: left;
     color: transparent;
     text-shadow: 0px 0px 20px $golden;
@@ -15,7 +16,7 @@
     color: $golden;
     text-shadow: none;
     transition: 0.6s;
-    font-size: 18vh;
+    font-size: 20vmin;
     text-align: center;
     text-decoration: none;
   }
@@ -32,3 +33,4 @@
   display: flex;
   align-items: center;
 }
+
