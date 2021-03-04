@@ -1,11 +1,11 @@
     <div class="row index-element header">
-      <div class="col-sm-5 col-lg-3 index-column text header title-tag">
+      <div class="col-sm-6 col-lg-3 index-column text header title-tag project-title">
         <p>PROJECT</p>
       </div>
       <div class="col-sm-2 col-lg-3 index-column text header date">
         <p>DATE</p>
       </div>
-      <div class="col-sm-5 col-lg-3 index-column text header title-tag taggy">
+      <div class="col-sm-4 col-lg-3 index-column text header title-tag taggy">
         <p>TAG</p>
       </div>
       <div class="col-sm-0 col-lg-3 index-column text header empty-header">
@@ -15,13 +15,13 @@
 
     <% @projects.each do |project| %>
     <div class="row index-element content">
-      <div class="col-sm-5 col-lg-3 index-column text title-tag">
+      <div class="col-sm-6 col-lg-3 index-column text title-tag project-title">
         <em><p><%= link_to project.title, project_path(project), class: "stretched-link"%></p></em>
       </div>
       <div class="col-sm-2 col-lg-3 index-column text date">
         <p><%= link_to project.year, project_path(project), class: "stretched-link" %></p>
       </div>
-      <div class="col-sm-5 col-lg-3 index-column text title-tag taggy">
+      <div class="col-sm-4 col-lg-3 index-column text title-tag taggy">
         <% if params[:tag].present? %>
           <p><%= link_to params[:tag], project_path(project), class: "stretched-link" %></p>
         <% else %>

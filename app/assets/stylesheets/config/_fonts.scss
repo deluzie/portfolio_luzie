@@ -66,8 +66,12 @@ body {
       width: 10%;
     }
 
-    .index-column.title-tag {
-      width: 35%;
+    .index-column.project-title {
+      width: 40%;
+    }
+
+    .index-column.taggy {
+      width: 25%;
     }
 
     .empty-header {
@@ -143,7 +147,7 @@ body {
     }
 
     .index-container {
-      min-height: 100vh;
+      padding-top: 12%;
     }
 
     .tag {
