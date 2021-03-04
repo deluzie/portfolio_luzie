@@ -6,6 +6,7 @@
 .index-container {
   min-height: 100vh;
   padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .index-element {
@@ -74,7 +75,7 @@
 }
 
 .reset {
-  padding: 80px;
+  padding-top: 80px;
   color: $golden;
   margin: auto;
   width: 80%;
